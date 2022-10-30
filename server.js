@@ -47,11 +47,6 @@ app.use(express.static('public')) // forces external files to be inside /public
 
 
 ////////////////////////////////////////////////
-/*
-	request to home page
-*/
-
-
 app.get('/home',function(req,res)
 {
 
@@ -59,8 +54,7 @@ app.get('/home',function(req,res)
 				
 
 })
-
-
+////////////////////////////////////////////////
 app.get('/',function(req,res)
 {
 
@@ -69,8 +63,6 @@ app.get('/',function(req,res)
 
 })
 ////////////////////////////////////////////////
-
-
 app.get('/privacy-policy',function(req,res)
 {
 
@@ -78,91 +70,7 @@ app.get('/privacy-policy',function(req,res)
 				
 
 })
-
-
-
-
-
-////////////////////////////////////////////////
-/*
-	request to application html
-*/
-
-
 ////////////////////////////////////////////////
 
-
-
-
-
-////////////////////////////////////////////////
-/*
-	request to images
-*/
-app.get('/cutherelogo',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/cutherelogo.png')
-})
-
-app.get('/koelbel',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/koelbel.png')
-})
-
-app.get('/ticket',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/ticket.png')
-})
-
-app.get('/umc',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/umc.png')
-})
-
-app.get('/eccr',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/eccr.png')
-})
-
-app.get('/university_logo',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/university_logo.png')
-})
-
-app.get('/duane',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/duane.png')
-})
-
-app.get('/farrand',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/farrand.png')
-})
-
-app.get('/hellems',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/hellems.png')
-})
-
-app.get('/humanities',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/humanities.png')
-})
-
-app.get('/math',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/math.png')
-})
-
-app.get('/norlin',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/norlin.png')
-})
-
-app.get('/rec',function(req,res)
-{
-	res.sendFile(__dirname + '/public/images/rec.png')
-})
-////////////////////////////////////////////////'
 app.listen(port)
 console.log('Server is being hosted on port 3000')

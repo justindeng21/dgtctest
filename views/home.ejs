@@ -2,6 +2,8 @@
 <!--CU There-->
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://c.evidon.com/dg/dg.js" companyid="7866"></script>
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -11,24 +13,56 @@
 			})(window,document,'script','dataLayer','GTM-WFKNVCC');
 		</script>
 		<!-- End Google Tag Manager -->
-        
-        
+		
+		
+		
+		<style>
+
+            a[href^="http://maps.google.com/maps"]{display:none !important}
+            a[href^="https://maps.google.com/maps"]{display:none !important}
+
+			.gmnoprint a, .gmnoprint span, .gm-style-cc {
+                display:none;
+            }
+            .gmnoprint div {
+                background:none !important;
+            }
+
+			html, body {
+                width: 100%;
+                height: 100%;
+            }
+            .wrapper {
+                position: relative;
+                width: 50%;
+                height: 50%;
+				margin: auto;
+
+            }
+            #map {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: #eee;
+            }
+		</style>
 	
     </head>
     
 	<body>
-        <!-- Google Tag Manager (noscript) -->
+		<!-- Google Tag Manager (noscript) -->
 		<noscript>
 			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFKNVCC"
 			height="0" width="0" style="display:none;visibility:hidden">
 			</iframe>
 		</noscript>
 		<!-- End Google Tag Manager (noscript) -->
-
-        <p>hi</p>
-    
-
+		
+    <div class="wrapper"><div id="map"></div></div>
+    <script type="text/javascript" src="js/google.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC65eIoju4pMvFg70DZvuMzlrymEL7oFps&callback=initMap"async defer></script>
+  
+	
 
 	</body>
-
 </html>

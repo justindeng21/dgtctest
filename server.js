@@ -63,7 +63,7 @@ app.get('/',function(req,res)
 
 })
 ////////////////////////////////////////////////
-app.get('privacy-policy',function(req,res)
+app.get('/privacy-policy',function(req,res)
 {
 
 	res.render('privacy-policy')

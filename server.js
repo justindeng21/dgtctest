@@ -70,6 +70,14 @@ app.get('/privacy-policy',function(req,res)
 				
 
 })
+
+app.get('/data-request',function(req,res)
+{
+
+	res.render('data-request')
+				
+
+})
 ////////////////////////////////////////////////
 
 app.listen(port)
